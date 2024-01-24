@@ -97,11 +97,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
  
 ul, 
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
  
 a {
@@ -112,12 +115,14 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
   margin: 20px 0;
 }
  
@@ -127,18 +132,18 @@ p {
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
- 
+  margin: 0;
 }
  
 address {
   font-style: normal;
 }
  
-.content-wrapper: {
+.content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
@@ -150,6 +155,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -160,7 +166,12 @@ flex-flow: row wrap;
 margin: 0;
 }
 
+header figure {
+  width: 60%;
+}
+
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -168,6 +179,9 @@ margin: 0;
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -176,11 +190,16 @@ justify-content: space-around;
 width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 footer {
 display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
+background-color: #202322;
 }
 
 footer p {
@@ -217,6 +236,10 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -265,6 +288,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -474,6 +500,10 @@ margin: 50px 0 0 0;
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
   width: 20%;
   }
@@ -487,6 +517,10 @@ margin: 50px 0 0 0;
   }
 
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -535,6 +569,7 @@ margin: 50px 0 0 0;
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -606,7 +641,7 @@ margin: 50px 0 0 0;
   }
 
   .faq-content {
-flex-basis: 45%;
+  flex-basis: 45%;
   }
 
   .faq h2 {
@@ -684,9 +719,14 @@ flex-basis: 33%;
 
 .reviews h2 {
   padding-bottom: 50px;
+}
 
 .reviews article div {
   width: 42%;
+}
+
+footer h4 {
+  font-size: 1.875em;
 }
 
 /* ------------------- About Page ----------------------- */
@@ -714,12 +754,6 @@ flex-basis: 33%;
 
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
